@@ -1,11 +1,11 @@
-About dataretrieval
-===================
+About dataretrieval-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dataretrieval-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/dataretrieval/
 
 Package license: CC0-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dataretrieval-feedstock/blob/main/LICENSE.txt)
 
 Summary: Package to obtain USGS or EPA water quality, streamflow, and metadata from web services.
 
@@ -143,5 +143,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@elbeejay](https://github.com/elbeejay/)
 * [@jsta](https://github.com/jsta/)
+* [@thodson-usgs](https://github.com/thodson-usgs/)
 
