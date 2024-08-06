@@ -1,5 +1,5 @@
 {% set name = "dataretrieval" %}
-{% set version = "1.0.9" %}
+{% set version = "1.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dataretrieval-{{ version }}.tar.gz
-  sha256: 5597d82f33fb2df9e43d555e6106ec8f950e1cd96cda11f2e739bfc91b7191b0
+  sha256: 6d071c94fc829ef1678d4e6304f79c5b4852f4cb3474c3e81862fd42bb3712fb
 
 build:
   noarch: python
