@@ -144,6 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@elbeejay](https://github.com/elbeejay/)
-* [@jsta](https://github.com/jsta/)
 * [@thodson-usgs](https://github.com/thodson-usgs/)
 
