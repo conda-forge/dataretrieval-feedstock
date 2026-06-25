@@ -20,9 +20,9 @@ requirements:
     - setuptools
     - python {{ python_min }}
   run:
-    - pandas
+    - httpx
+    - pandas >=2.0.0,<4.0.0
     - python >={{ python_min }}
-    - requests
 
 test:
   imports:
