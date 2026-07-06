@@ -11,13 +11,16 @@ source:
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
     - pip
     - setuptools
+    # resolves the dynamic version from the sdist's PKG-INFO; without it
+    # setuptools stamps the default 0.0.0 into the installed dist metadata
+    - setuptools_scm
     - python {{ python_min }}
   run:
     - httpx
@@ -29,6 +32,7 @@ test:
     - dataretrieval
   commands:
     - pip check
+    - python -c "import dataretrieval; assert dataretrieval.__version__ == '{{ version }}', dataretrieval.__version__"
   requires:
     - pip
     - python {{ python_min }}
