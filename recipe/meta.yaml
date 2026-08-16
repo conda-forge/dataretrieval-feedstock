@@ -23,9 +23,11 @@ requirements:
     - setuptools_scm
     - python {{ python_min }}
   run:
+    - anyio >=4.0
     - httpx
     - pandas >=2.0.0,<4.0.0
     - python >={{ python_min }}
+    - tomli >=1.1.0
 
 test:
   imports:
